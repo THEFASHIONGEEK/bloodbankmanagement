@@ -14,12 +14,12 @@ class Donor(models.Model):
    
     @property
     def get_name(self):
-        return self.user.first_name+" "+self.user.last_name
+        return self.user
     @property
     def get_instance(self):
         return self
     def __str__(self):
-        return self.user.first_name
+        return self.user
 
 class BloodDonate(models.Model): 
     donor=models.ForeignKey(Donor,on_delete=models.CASCADE)   

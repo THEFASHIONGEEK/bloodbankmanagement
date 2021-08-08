@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'blood',
     'donor',
     'patient',
+    'graphene_django',
 ]
 
 MIDDLEWARE = [
